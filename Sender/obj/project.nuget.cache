@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HsvsBaJI4ACPUzz+HtdPZxf7LciBhkGphMECUnPMhBUvgRctvDm8WZD2eKkiOFkmDuqNUlc8Kwn3r6wF6B5DIA==",
+  "dgSpecHash": "9lrwR0zmKgR/X5s4ITMFdkzkpRfBIdm0pnhCUl4nzAwEZJUE5APWtbl8Igg12i8/jg5dNsemIfelH1BDKLCpKA==",
   "success": true,
-  "projectFilePath": "D:\\Bootcamp\\Case Study1\\visit-case-s22b9\\Visit Count\\Sender\\Sender.csproj",
+  "projectFilePath": "D:\\Bootcamp\\Case Study1\\visit-case-s22b9\\Sender\\Sender.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

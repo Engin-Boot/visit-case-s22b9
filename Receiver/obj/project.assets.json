@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Bootcamp\\Case Study1\\visit-case-s22b9\\Visit Count\\Receiver\\Receiver.csproj",
+      "projectUniqueName": "D:\\Bootcamp\\Case Study1\\visit-case-s22b9\\Receiver\\Receiver.csproj",
       "projectName": "Receiver",
-      "projectPath": "D:\\Bootcamp\\Case Study1\\visit-case-s22b9\\Visit Count\\Receiver\\Receiver.csproj",
+      "projectPath": "D:\\Bootcamp\\Case Study1\\visit-case-s22b9\\Receiver\\Receiver.csproj",
       "packagesPath": "C:\\Users\\Twinkal\\.nuget\\packages\\",
-      "outputPath": "D:\\Bootcamp\\Case Study1\\visit-case-s22b9\\Visit Count\\Receiver\\obj\\",
+      "outputPath": "D:\\Bootcamp\\Case Study1\\visit-case-s22b9\\Receiver\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Twinkal\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Bootcamp\\Case Study1\\visit-case-s22b9\\Visit Count\\Sender\\Sender.csproj": {}
+    "D:\\Bootcamp\\Case Study1\\visit-case-s22b9\\Sender\\Sender.csproj": {}
   },
   "projects": {
-    "D:\\Bootcamp\\Case Study1\\visit-case-s22b9\\Visit Count\\Sender\\Sender.csproj": {
+    "D:\\Bootcamp\\Case Study1\\visit-case-s22b9\\Sender\\Sender.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Bootcamp\\Case Study1\\visit-case-s22b9\\Visit Count\\Sender\\Sender.csproj",
+        "projectUniqueName": "D:\\Bootcamp\\Case Study1\\visit-case-s22b9\\Sender\\Sender.csproj",
         "projectName": "Sender",
-        "projectPath": "D:\\Bootcamp\\Case Study1\\visit-case-s22b9\\Visit Count\\Sender\\Sender.csproj",
+        "projectPath": "D:\\Bootcamp\\Case Study1\\visit-case-s22b9\\Sender\\Sender.csproj",
         "packagesPath": "C:\\Users\\Twinkal\\.nuget\\packages\\",
-        "outputPath": "D:\\Bootcamp\\Case Study1\\visit-case-s22b9\\Visit Count\\Sender\\obj\\",
+        "outputPath": "D:\\Bootcamp\\Case Study1\\visit-case-s22b9\\Sender\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Twinkal\\AppData\\Roaming\\NuGet\\NuGet.Config",
