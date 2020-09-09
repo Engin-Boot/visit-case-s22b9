@@ -1,0 +1,13 @@
+D:\Bootcamp\Case Study\visit-case-s22b9\Visit Count\Receiver\bin\Debug\netcoreapp3.1\Receiver.exe
+D:\Bootcamp\Case Study\visit-case-s22b9\Visit Count\Receiver\bin\Debug\netcoreapp3.1\Receiver.deps.json
+D:\Bootcamp\Case Study\visit-case-s22b9\Visit Count\Receiver\bin\Debug\netcoreapp3.1\Receiver.runtimeconfig.json
+D:\Bootcamp\Case Study\visit-case-s22b9\Visit Count\Receiver\bin\Debug\netcoreapp3.1\Receiver.runtimeconfig.dev.json
+D:\Bootcamp\Case Study\visit-case-s22b9\Visit Count\Receiver\bin\Debug\netcoreapp3.1\Receiver.dll
+D:\Bootcamp\Case Study\visit-case-s22b9\Visit Count\Receiver\bin\Debug\netcoreapp3.1\Receiver.pdb
+D:\Bootcamp\Case Study\visit-case-s22b9\Visit Count\Receiver\obj\Debug\netcoreapp3.1\Receiver.csprojAssemblyReference.cache
+D:\Bootcamp\Case Study\visit-case-s22b9\Visit Count\Receiver\obj\Debug\netcoreapp3.1\Receiver.AssemblyInfoInputs.cache
+D:\Bootcamp\Case Study\visit-case-s22b9\Visit Count\Receiver\obj\Debug\netcoreapp3.1\Receiver.AssemblyInfo.cs
+D:\Bootcamp\Case Study\visit-case-s22b9\Visit Count\Receiver\obj\Debug\netcoreapp3.1\Receiver.csproj.CoreCompileInputs.cache
+D:\Bootcamp\Case Study\visit-case-s22b9\Visit Count\Receiver\obj\Debug\netcoreapp3.1\Receiver.dll
+D:\Bootcamp\Case Study\visit-case-s22b9\Visit Count\Receiver\obj\Debug\netcoreapp3.1\Receiver.pdb
+D:\Bootcamp\Case Study\visit-case-s22b9\Visit Count\Receiver\obj\Debug\netcoreapp3.1\Receiver.genruntimeconfig.cache
