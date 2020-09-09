@@ -6,7 +6,7 @@ namespace Receiver
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World! From Recevier");
+            Console.WriteLine("Hello World!");
         }
     }
 }

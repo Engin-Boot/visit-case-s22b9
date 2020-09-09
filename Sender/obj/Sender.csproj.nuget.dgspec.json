@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Bootcamp\\Case Study1\\visit-case-s22b9\\Visit Count\\Sender\\Sender.csproj": {}
+    "C:\\Users\\320104254\\source\\repos\\visit-case-s22b9\\Sender\\Sender.csproj": {}
   },
   "projects": {
-    "D:\\Bootcamp\\Case Study1\\visit-case-s22b9\\Visit Count\\Sender\\Sender.csproj": {
+    "C:\\Users\\320104254\\source\\repos\\visit-case-s22b9\\Sender\\Sender.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Bootcamp\\Case Study1\\visit-case-s22b9\\Visit Count\\Sender\\Sender.csproj",
+        "projectUniqueName": "C:\\Users\\320104254\\source\\repos\\visit-case-s22b9\\Sender\\Sender.csproj",
         "projectName": "Sender",
-        "projectPath": "D:\\Bootcamp\\Case Study1\\visit-case-s22b9\\Visit Count\\Sender\\Sender.csproj",
-        "packagesPath": "C:\\Users\\Twinkal\\.nuget\\packages\\",
-        "outputPath": "D:\\Bootcamp\\Case Study1\\visit-case-s22b9\\Visit Count\\Sender\\obj\\",
+        "projectPath": "C:\\Users\\320104254\\source\\repos\\visit-case-s22b9\\Sender\\Sender.csproj",
+        "packagesPath": "C:\\Users\\320104254\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\320104254\\source\\repos\\visit-case-s22b9\\Sender\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Twinkal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\320104254\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
