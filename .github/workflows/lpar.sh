@@ -26,4 +26,4 @@ do
         read heading
         checkloc $1
     fi
-done
+done 
