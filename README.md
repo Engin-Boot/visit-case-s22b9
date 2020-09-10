@@ -22,7 +22,7 @@ Run them on the command line as follows:
 This would make the console-writes of the sender
 become the console-reads of the receiver.
 
-## Decomposition of responsibility within the Sender and Receiver
+### Decomposition of responsibility within the Sender and Receiver
 
 The naming of source files within the Sender and within the Receiver
 give their internal decomposition.

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9D1B2E41-0B77-4FD4-A9BE-F283120716C0}</ProjectGuid>
+    <ProjectGuid>{2405BBEE-24EC-4F50-9617-7B5B34561DFC}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Sender</RootNamespace>
-    <AssemblyName>Sender</AssemblyName>
+    <RootNamespace>Recevier</RootNamespace>
+    <AssemblyName>Recevier</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,17 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConsoleDisplayer.cs" />
-    <Compile Include="CsvFileReader.cs" />
-    <Compile Include="DataSplitter.cs" />
-    <Compile Include="DateFormatter.cs" />
-    <Compile Include="Sender.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TimeFormatter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="InputFootFallsData.csv" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
