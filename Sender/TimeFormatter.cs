@@ -8,6 +8,8 @@ namespace Sender
         public List<string> HourList { get; set; }
         public List<string> MinutList { get; set; }
         public List<string> MeridiemList { get; set; }
+        public bool IsTimeFormatted { get; set; }
+
         public TimeFormatter(List<string> timeList)
         {
             this.HourList=new List<string>();
@@ -30,10 +32,13 @@ namespace Sender
                     this.HourList.Add(hourNMinStr[0]);
                     this.MinutList.Add(hourNMinStr[1]);
                 }
+
+                IsTimeFormatted = true;
             }
             catch (Exception e)
             {
                 Console.WriteLine(e+" Con not Split into Hour Min AM/Pm!! Check TimeFormatter");
+                IsTimeFormatted = false;
                 throw;
             }
         }

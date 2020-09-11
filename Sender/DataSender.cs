@@ -6,6 +6,13 @@ namespace Sender
 {
     public class DataSender
     {
+        public string OutputFilePath { get; set; }
+
+        public DataSender()
+        {
+            OutputFilePath = "";
+        }
+
         private void AppendToFile(string dataType, string outputFilePath,List<string> dataList)
         {
             try
@@ -34,22 +41,23 @@ namespace Sender
 
             try
             {
-                string outputFilePath = "D:/Bootcamp/Case Study1/visit-case-s22b9/Recevier/formattedOutput.txt";
+                OutputFilePath = "D:/Bootcamp/Case Study1/visit-case-s22b9/Recevier/formattedOutput.txt";
 
                 string text1 = "Type of Data      Values";
-                File.WriteAllText(outputFilePath, text1);
+                File.WriteAllText(OutputFilePath, text1);
 
-                this.AppendToFile("\n Day : ", outputFilePath, dayList);
-                this.AppendToFile("\n Month : ", outputFilePath, monthList);
-                this.AppendToFile("\n Year : ", outputFilePath, yearList);
-                this.AppendToFile("\n Minutes : ", outputFilePath, minutList);
-                this.AppendToFile("\n Hour : ", outputFilePath, hourList);
-                this.AppendToFile("\n Am/PM : ", outputFilePath, meridiemList);
-                Console.WriteLine(File.ReadAllText(outputFilePath));
+                this.AppendToFile("\n Day : ", OutputFilePath, dayList);
+                this.AppendToFile("\n Month : ", OutputFilePath, monthList);
+                this.AppendToFile("\n Year : ", OutputFilePath, yearList);
+                this.AppendToFile("\n Minutes : ", OutputFilePath, minutList);
+                this.AppendToFile("\n Hour : ", OutputFilePath, hourList);
+                this.AppendToFile("\n Am/PM : ", OutputFilePath, meridiemList);
+                Console.WriteLine(File.ReadAllText(OutputFilePath));
             }
             catch (Exception e)
             {
                 Console.WriteLine(e+ "Unable to send data to recevier!! Check DataSender");
+                OutputFilePath = "";
                 throw;
             }
          

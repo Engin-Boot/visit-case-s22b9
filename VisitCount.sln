@@ -7,6 +7,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sender", "Sender\Sender.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recevier", "Recevier\Recevier.csproj", "{2405BBEE-24EC-4F50-9617-7B5B34561DFC}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sender.Tests", "Sender.Tests\Sender.Tests.csproj", "{95F66173-2CFD-4C5B-BE99-95EE9024C7FE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9D1B2E41-0B77-4FD4-A9BE-F283120716C0} = {9D1B2E41-0B77-4FD4-A9BE-F283120716C0}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Receiver.Tests", "Receiver.Tests\Receiver.Tests.csproj", "{780ACE79-418C-4D43-A0B5-01EFE4E361CF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2405BBEE-24EC-4F50-9617-7B5B34561DFC} = {2405BBEE-24EC-4F50-9617-7B5B34561DFC}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +31,14 @@ Global
 		{2405BBEE-24EC-4F50-9617-7B5B34561DFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2405BBEE-24EC-4F50-9617-7B5B34561DFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2405BBEE-24EC-4F50-9617-7B5B34561DFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95F66173-2CFD-4C5B-BE99-95EE9024C7FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95F66173-2CFD-4C5B-BE99-95EE9024C7FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95F66173-2CFD-4C5B-BE99-95EE9024C7FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95F66173-2CFD-4C5B-BE99-95EE9024C7FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{780ACE79-418C-4D43-A0B5-01EFE4E361CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{780ACE79-418C-4D43-A0B5-01EFE4E361CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{780ACE79-418C-4D43-A0B5-01EFE4E361CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{780ACE79-418C-4D43-A0B5-01EFE4E361CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

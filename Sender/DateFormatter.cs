@@ -8,6 +8,9 @@ namespace Sender
         public List<string> DayList { get; set; }
         public List<string> MonthList { get; set; }
         public List<string> YearList { get; set; }
+
+        public bool IsDateFormatted { get; set; }
+
         public DateFormatter(List<string> dateList)
         {
             this.DayList = new List<string>();
@@ -28,10 +31,13 @@ namespace Sender
                     this.MonthList.Add(dd_mm_yyyy[1]);
                     this.YearList.Add(dd_mm_yyyy[2]);
                 }
+
+                IsDateFormatted = true;
             }
             catch (Exception e)
             {
                 Console.WriteLine(e+" Can not Split Into day Month Year!! Check DataFormatter");
+                IsDateFormatted = false;
                 throw;
             }
         }

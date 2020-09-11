@@ -12,3 +12,10 @@ D:\Bootcamp\Case Study1\visit-case-s22b9\Sender\obj\Debug\Sender.csprojAssemblyR
 D:\Bootcamp\Case Study1\visit-case-s22b9\Sender\obj\Debug\Sender.csproj.CoreCompileInputs.cache
 D:\Bootcamp\Case Study1\visit-case-s22b9\Sender\obj\Debug\Sender.exe
 D:\Bootcamp\Case Study1\visit-case-s22b9\Sender\obj\Debug\Sender.pdb
+E:\VisitCountCase\visit-case-s22b9\Sender\bin\Debug\Sender.exe.config
+E:\VisitCountCase\visit-case-s22b9\Sender\bin\Debug\Sender.exe
+E:\VisitCountCase\visit-case-s22b9\Sender\bin\Debug\Sender.pdb
+E:\VisitCountCase\visit-case-s22b9\Sender\obj\Debug\Sender.csprojAssemblyReference.cache
+E:\VisitCountCase\visit-case-s22b9\Sender\obj\Debug\Sender.csproj.CoreCompileInputs.cache
+E:\VisitCountCase\visit-case-s22b9\Sender\obj\Debug\Sender.exe
+E:\VisitCountCase\visit-case-s22b9\Sender\obj\Debug\Sender.pdb

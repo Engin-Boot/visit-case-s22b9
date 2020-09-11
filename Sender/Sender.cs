@@ -1,15 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Sender
 {
-    class Sender
+    
+    public class Sender
     {
+        public  bool IsExcuted { get; set; }
+
+        public Sender()
+        {
+            IsExcuted = true;
+        }
+
         static void Main(string[] args)
         {
+            
             CsvFileReader reader = new CsvFileReader();
             List<string> footFallDataList = reader.DataList;
             
@@ -21,6 +31,8 @@ namespace Sender
             obj.DisplayOnConsole(dateList,timeList);
             DataSender sendData=new DataSender();
             sendData.StoreDataInTextFile(dateList,timeList);
+
+           
             Console.ReadLine();
 
         }
