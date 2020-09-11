@@ -1,33 +1,36 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data;
 
 namespace Sender
 {
     public class DataSplitter
     {
-        private readonly List<string> dateList= new List<string>();
-        private  readonly List<string> timeList=new List<string>();
-
-        public List<string> getDateList()
+        public List<string> DateList { get; set; }
+        public List<string> TimeList { get; set; }
+        public DataSplitter(List<string> dataList)
         {
-            return this.dateList;
+            this.DateList=new List<string>();
+            this.TimeList=new List<string>();
+            this.SplitIntoDateTimeList(dataList);
         }
-
-        public List<string> GetTimeList()
+        
+        private void SplitIntoDateTimeList(List<string> dataList)
         {
-            return this.timeList;
-        }
-
-        public void splitIntoDateTimeList(List<string> dataList)
-        {
-            int sizeOfDataList = dataList.Count;
-            for (int index = 0; index < sizeOfDataList; index++)
+            try
             {
-                string tempEntryOfList = dataList[index];
-                string[] dataTimeString = tempEntryOfList.Split(',');
-                this.dateList.Add(dataTimeString[0]);
-                this.timeList.Add(dataTimeString[1]);
+                int sizeOfDataList = dataList.Count;
+                for (int index = 0; index < sizeOfDataList; index++)
+                {
+                    string tempEntryOfList = dataList[index];
+                    string[] dateAndTimeString = tempEntryOfList.Split(',');
+                    this.DateList.Add(dateAndTimeString[0]);
+                    this.TimeList.Add(dateAndTimeString[1]);
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e+" Can not split into Date and time!!--Check DataSplitter");
+                throw;
             }
 
         }

@@ -6,56 +6,54 @@ namespace Sender
 {
     public class DataSender
     {
-        public void storeDataInTextFile(List<string> dateList , List<string> timeList)
+        private void AppendToFile(string dataType, string outputFilePath,List<string> dataList)
         {
-            DateFormatter formattedDate = new DateFormatter();
-            formattedDate.formatDate(dateList);
-            List<string> dayList = formattedDate.getdayList();
-            List<string> monthList = formattedDate.GetMonthList();
-            List<string> yearList = formattedDate.GetYearList();
+            try
+            {
+                string dataListAsString = dataType;
+                dataListAsString += StringConvertor.ConvertToString(dataList);
+                File.AppendAllText(outputFilePath, dataListAsString);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e + " Check DataSender->AppendToFile");
+                throw;
+            }
+        }
+        public void StoreDataInTextFile(List<string> dateList , List<string> timeList)
+        {
+            DateFormatter formattedDate = new DateFormatter(dateList);
+            List<string> dayList = formattedDate.DayList;
+            List<string> monthList = formattedDate.MonthList;
+            List<string> yearList = formattedDate.YearList;
 
-            TimeFormatter formatTime = new TimeFormatter();
-            formatTime.formatTime(timeList);
-            List<string> minutList = formatTime.GetMinList();
-            List<string> houList = formatTime.getHourList();
-            List<string> meridiemList = formatTime.GetMeridiem();
+            TimeFormatter formattedTime = new TimeFormatter(timeList);
+            List<string> minutList = formattedTime.MinutList;
+            List<string> hourList = formattedTime.HourList; 
+            List<string> meridiemList = formattedTime.MeridiemList;
 
-            
-            string outputFilePath = "D:/Bootcamp/Final Sender Recevier/VisitCount/Recevier/formattedOutput.txt";
+            try
+            {
+                string outputFilePath = "D:/Bootcamp/Case Study1/visit-case-s22b9/Recevier/formattedOutput.txt";
 
-            string text1 = "Type of Data      Values";
-            File.WriteAllText(outputFilePath, text1);
+                string text1 = "Type of Data      Values";
+                File.WriteAllText(outputFilePath, text1);
 
-            string dayListAsString = "\n Day : ";
-            dayListAsString +=StringConvertor.ConvertToString(dayList);
-            File.AppendAllText(outputFilePath, dayListAsString);
-
-            string monthListAsString = "\n Month : ";
-            monthListAsString += StringConvertor.ConvertToString(monthList);
-            File.AppendAllText(outputFilePath, monthListAsString);
-
-            string yearListAsString = "\n Year : ";
-            yearListAsString += StringConvertor.ConvertToString(yearList);
-            File.AppendAllText(outputFilePath, yearListAsString);
-
-            string minListAsString = "\n Minutes : ";
-            minListAsString += StringConvertor.ConvertToString(minutList);
-            File.AppendAllText(outputFilePath, minListAsString);
-
-            string hourListAsString = "\n Hour : ";
-            hourListAsString += StringConvertor.ConvertToString(houList);
-            File.AppendAllText(outputFilePath, hourListAsString);
-
-            string memeridiemListAsString = "\n Am/PM : ";
-            memeridiemListAsString += StringConvertor.ConvertToString(meridiemList);
-            File.AppendAllText(outputFilePath, memeridiemListAsString);
-
-
-            // To display current contents of the file 
-            Console.WriteLine(File.ReadAllText(outputFilePath));
-            Console.ReadKey();
-
-
+                this.AppendToFile("\n Day : ", outputFilePath, dayList);
+                this.AppendToFile("\n Month : ", outputFilePath, monthList);
+                this.AppendToFile("\n Year : ", outputFilePath, yearList);
+                this.AppendToFile("\n Minutes : ", outputFilePath, minutList);
+                this.AppendToFile("\n Hour : ", outputFilePath, hourList);
+                this.AppendToFile("\n Am/PM : ", outputFilePath, meridiemList);
+                Console.WriteLine(File.ReadAllText(outputFilePath));
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e+ "Unable to send data to recevier!! Check DataSender");
+                throw;
+            }
+         
+           
         }
     }
 }

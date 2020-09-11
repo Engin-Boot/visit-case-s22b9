@@ -9,18 +9,20 @@ namespace Sender
     class Sender
     {
         static void Main(string[] args)
-        { 
+        {
             CsvFileReader reader = new CsvFileReader();
-            List<string> dataList= reader.ReadCsvFile();
-            DataSplitter splittedData = new DataSplitter();
-            splittedData.splitIntoDateTimeList(dataList);
-            List<string> dateList = splittedData.getDateList();
-            List<string> timeList = splittedData.GetTimeList();
+            List<string> footFallDataList = reader.DataList;
+            
+            DataSplitter splittedData = new DataSplitter(footFallDataList);
+            List<string> dateList = splittedData.DateList;
+            List<string> timeList = splittedData.TimeList;
+
             ConsoleDisplayer obj=new ConsoleDisplayer();
-            obj.displayOnConsole(dateList,timeList);
+            obj.DisplayOnConsole(dateList,timeList);
             DataSender sendData=new DataSender();
-            sendData.storeDataInTextFile(dateList,timeList);
+            sendData.StoreDataInTextFile(dateList,timeList);
             Console.ReadLine();
+
         }
     }
 }

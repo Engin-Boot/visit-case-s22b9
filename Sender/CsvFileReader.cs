@@ -3,32 +3,36 @@ using System.Collections.Generic;
 using  System.IO;
 namespace Sender
 {
-    class CsvFileReader
+    public class CsvFileReader
     {
-        private List<string> dataList = new List<string>();
-        public List<string> ReadCsvFile()
+        public List<string> DataList { get; set; }
+        public CsvFileReader()
         {
-            string csvFilePath = "D:/Bootcamp/Final Sender Recevier/VisitCount/Sender/InputFootFallsData.csv";
+            DataList=new List<string>();
+            this.ReadCsvFile();
+        }
+        private void ReadCsvFile()
+        {
+            var csvInputFilePath = "D:/Bootcamp/Case Study1/visit-case-s22b9/Sender/InputFootFallsData.csv";
             Console.WriteLine("Reading CSV File.......");
-            if (File.Exists(csvFilePath))
+            try
             {
-                StreamReader inputDataStreamReader = new StreamReader(csvFilePath);
-                string line;
-                while ((line = inputDataStreamReader.ReadLine()) != null)
-                {
-                    Console.WriteLine(line);
-                    this.dataList.Add(line);
-                }
+                    StreamReader inputDataStreamReader = new StreamReader(csvInputFilePath);
+                    string line;
+                    while ((line = inputDataStreamReader.ReadLine()) != null)
+                    {
+                        Console.WriteLine(line);
+                        DataList.Add(line);
+                    }
 
-                inputDataStreamReader.Close();
-                Console.ReadKey();
+                    inputDataStreamReader.Close();
             }
-            else
+            catch (Exception e)
             {
-                Console.WriteLine("File Not Found!!");
+                Console.WriteLine(e+" File Not Found!!--Check CsvFileReader");
+                throw;
             }
             Console.WriteLine();
-            return this.dataList;
         }
     }
     

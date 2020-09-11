@@ -1,45 +1,40 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Sender
 {
     public class TimeFormatter
     {
-        private readonly List<string> hourList=new List<string>();
-        private readonly List<string> minList=new List<string>();
-        private readonly List<string> meridiemList=new List<string>();
-
-        public List<string> getHourList()
+        public List<string> HourList { get; set; }
+        public List<string> MinutList { get; set; }
+        public List<string> MeridiemList { get; set; }
+        public TimeFormatter(List<string> timeList)
         {
-            return this.hourList;
+            this.HourList=new List<string>();
+            this.MinutList=new List<string>();
+            this.MeridiemList=new List<string>();
+            this.GetFormattedDate(timeList);
         }
-
-        public List<string> GetMinList()
+        private void GetFormattedDate(List<string> timeList)
         {
-            return this.minList;
-        }
-
-        public List<string> GetMeridiem()
-        {
-            return this.meridiemList;
-        }
-
-        public void formatTime(List<string> timeList)
-        {
-            int sizeOfTimeList = timeList.Count;
-            for (int index = 1; index < sizeOfTimeList; index++)
+            try
             {
-
-                string time = timeList[index];
-                string[] splitIntoTimeAndMeridiem = time.Split(' ');
-                this.meridiemList.Add(splitIntoTimeAndMeridiem[1]);
-                string onlyTime = splitIntoTimeAndMeridiem[0];
-                string[] hourNMinStr = onlyTime.Split(':');
-                this.hourList.Add(hourNMinStr[0]);
-                this.minList.Add(hourNMinStr[1]);
+                int sizeOfTimeList = timeList.Count;
+                for (int index = 1; index < sizeOfTimeList; index++)
+                {
+                    string time = timeList[index];
+                    string[] splitIntoTimeAndMeridiem = time.Split(' ');
+                    this.MeridiemList.Add(splitIntoTimeAndMeridiem[1]);
+                    string onlyTime = splitIntoTimeAndMeridiem[0];
+                    string[] hourNMinStr = onlyTime.Split(':');
+                    this.HourList.Add(hourNMinStr[0]);
+                    this.MinutList.Add(hourNMinStr[1]);
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e+" Con not Split into Hour Min AM/Pm!! Check TimeFormatter");
+                throw;
             }
         }
 

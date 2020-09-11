@@ -8,19 +8,18 @@ namespace Sender
 {
     public class ConsoleDisplayer
     {
-        public void displayOnConsole(List<string> dateList ,List<string> timeList)
+        public void DisplayOnConsole(List<string> dateList ,List<string> timeList)
         {
-            DateFormatter formattedDate = new DateFormatter();
-            formattedDate.formatDate(dateList);
-            List<string> dayList = formattedDate.getdayList();
-            List<string> monthList = formattedDate.GetMonthList();
-            List<string> yearList = formattedDate.GetYearList();
+            DateFormatter formattedDate = new DateFormatter(dateList);
+            List<string> dayList = formattedDate.DayList;
+            List<string> monthList = formattedDate.MonthList;
+            List<string> yearList = formattedDate.YearList;
             
-            TimeFormatter formatTime = new TimeFormatter();
-            formatTime.formatTime(timeList);
-            List<string> minutList = formatTime.GetMinList();
-            List<string> houList = formatTime.getHourList();
-            List<string> meridiemList = formatTime.GetMeridiem();
+            TimeFormatter formattedTime = new TimeFormatter(timeList);
+            List<string> minutList = formattedTime.MinutList;
+            List<string> houList = formattedTime.HourList;
+            List<string> meridiemList = formattedTime.MeridiemList;
+
             int numberOfrows = dayList.Count;
             Console.WriteLine("--------Table---------");
             Console.WriteLine("Day      Month       Year     Hour      Minut    Meridiem");
