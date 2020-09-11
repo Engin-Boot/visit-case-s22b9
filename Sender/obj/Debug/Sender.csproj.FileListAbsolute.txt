@@ -19,3 +19,10 @@ E:\VisitCountCase\visit-case-s22b9\Sender\obj\Debug\Sender.csprojAssemblyReferen
 E:\VisitCountCase\visit-case-s22b9\Sender\obj\Debug\Sender.csproj.CoreCompileInputs.cache
 E:\VisitCountCase\visit-case-s22b9\Sender\obj\Debug\Sender.exe
 E:\VisitCountCase\visit-case-s22b9\Sender\obj\Debug\Sender.pdb
+C:\Users\320104254\source\repos\visit-case-s22b9\Sender\bin\Debug\Sender.exe.config
+C:\Users\320104254\source\repos\visit-case-s22b9\Sender\bin\Debug\Sender.exe
+C:\Users\320104254\source\repos\visit-case-s22b9\Sender\bin\Debug\Sender.pdb
+C:\Users\320104254\source\repos\visit-case-s22b9\Sender\obj\Debug\Sender.csprojAssemblyReference.cache
+C:\Users\320104254\source\repos\visit-case-s22b9\Sender\obj\Debug\Sender.csproj.CoreCompileInputs.cache
+C:\Users\320104254\source\repos\visit-case-s22b9\Sender\obj\Debug\Sender.exe
+C:\Users\320104254\source\repos\visit-case-s22b9\Sender\obj\Debug\Sender.pdb
