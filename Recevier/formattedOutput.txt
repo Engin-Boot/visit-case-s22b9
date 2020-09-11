@@ -1,0 +1,7 @@
+Type of Data      Values
+ Day : 01 02 03 04 05 06 06 07 09 
+ Month : 12 12 10 11 09 02 03 04 05 
+ Year : 2020 2020 2020 2020 2020 2020 2019 2020 2020 
+ Minutes : 05 05 30 20 20 20 30 59 19 
+ Hour : 11 11 11 12 01 01 02 03 04 
+ Am/PM : AM AM AM PM PM PM PM PM PM 

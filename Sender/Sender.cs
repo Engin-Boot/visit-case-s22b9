@@ -18,6 +18,8 @@ namespace Sender
             List<string> timeList = splittedData.GetTimeList();
             ConsoleDisplayer obj=new ConsoleDisplayer();
             obj.displayOnConsole(dateList,timeList);
+            DataSender sendData=new DataSender();
+            sendData.storeDataInTextFile(dateList,timeList);
             Console.ReadLine();
         }
     }
