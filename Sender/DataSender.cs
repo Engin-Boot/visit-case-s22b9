@@ -37,11 +37,12 @@ namespace Sender
             TimeFormatter formattedTime = new TimeFormatter(timeList);
             List<string> minutList = formattedTime.MinutList;
             List<string> hourList = formattedTime.HourList; 
-            List<string> meridiemList = formattedTime.MeridiemList;
+            //List<string> meridiemList = formattedTime.MeridiemList;
 
             try
             {
-                OutputFilePath = "D:/Bootcamp/Case Study1/visit-case-s22b9/Recevier/formattedOutput.txt";
+                //OutputFilePath = "D:/Bootcamp/Case Study1/visit-case-s22b9/Recevier/formattedOutput.txt";
+                OutputFilePath = "D:/Bootcamp/Final Sender Recevier/VisitCount/Recevier/bin/Debug/formattedOutput.txt";
 
                 string text1 = "Type of Data      Values";
                 File.WriteAllText(OutputFilePath, text1);
@@ -51,7 +52,7 @@ namespace Sender
                 this.AppendToFile("\n Year : ", OutputFilePath, yearList);
                 this.AppendToFile("\n Minutes : ", OutputFilePath, minutList);
                 this.AppendToFile("\n Hour : ", OutputFilePath, hourList);
-                this.AppendToFile("\n Am/PM : ", OutputFilePath, meridiemList);
+               // this.AppendToFile("\n Am/PM : ", OutputFilePath, meridiemList);
                 Console.WriteLine(File.ReadAllText(OutputFilePath));
             }
             catch (Exception e)

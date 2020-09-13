@@ -6,15 +6,18 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Recevier
-<<<<<<< HEAD
 { 
-    class TextFileReader
+    public class TextFileReader
     {
         public List<string> TextList { get; set; }
+        public bool IsFileRead { get; set; }
+
         public TextFileReader()
         {
+            IsFileRead = false;
             this.TextList=new List<string>();
             this.ReadTextFile();
+            IsFileRead = true;
         }
         private void ReadTextFile()
         {
@@ -33,6 +36,7 @@ namespace Recevier
                     TextList.Add(line);
                 }
 
+                
                 inputDataStreamReader.Close();
             }
             catch (Exception e)
@@ -41,35 +45,6 @@ namespace Recevier
                 throw;
             }
             Console.WriteLine();
-=======
-{
-    class TextFileReader
-    {
-        private List<string> textList = new List<string>();
-        public List<string> ReadTextFile()
-        {
-            string textFilePath = "C:/Users/320104254/source/repos/Bootcamp/Final Sender Recevier/Recevier/formattedOutput.txt";
-            Console.WriteLine("Reading Text File.......");
-            if (File.Exists(textFilePath))
-            {
-                StreamReader inputStreamReader = new StreamReader(textFilePath);
-                string line;
-                while ((line = inputStreamReader.ReadLine()) != null)
-                {
-                    Console.WriteLine(line);
-                    this.textList.Add(line);
-                    
-                }
-                
-                inputStreamReader.Close();
-            }
-            else
-            {
-                Console.WriteLine("File Not Found!!");
-            }
-            Console.WriteLine();
-            return this.textList;
->>>>>>> f89b81de26de99f8c7b14cb8c514d00297d0f938
         }
     }
 }

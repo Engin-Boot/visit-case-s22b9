@@ -1,9 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Sender
 {
@@ -11,7 +7,6 @@ namespace Sender
     public class Sender
     {
         public  bool IsExcuted { get; set; }
-
         public Sender()
         {
             IsExcuted = true;

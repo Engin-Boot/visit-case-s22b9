@@ -8,6 +8,19 @@ namespace Recevier
 {
     public  class AggregatorSupporter
     {
+        public bool IsSupporterWork { get; set; }
+        public bool IsGetCountPerDayWorks { get; set; }
+        public bool IsGetIndexWorks { get; set; }
+        public bool IsGetListOfGivenMonthAndYear { get; set; }
+
+        public AggregatorSupporter()
+        {
+            IsGetIndexWorks = true;
+            IsGetCountPerDayWorks = true;
+            IsGetListOfGivenMonthAndYear = true;
+            IsSupporterWork = true;
+        }
+
         public int GetCountPerDay(int day, int month, int year, TextListSplitter textListSplitter,int noOfRows)
         {
             try
@@ -22,6 +35,8 @@ namespace Recevier
                         count++;
                     }
                 }
+
+                IsGetCountPerDayWorks = true;
                 return count;
 
             }
@@ -47,6 +62,7 @@ namespace Recevier
                     }
                 }
 
+                IsGetIndexWorks = true;
                 return indexList;
             }
             catch (Exception e)
@@ -70,6 +86,7 @@ namespace Recevier
                     }
                 }
 
+                IsGetListOfGivenMonthAndYear = true;
                 return indexList;
 
             }

@@ -13,7 +13,11 @@ namespace Sender
         }
         private void ReadCsvFile()
         {
-            var csvInputFilePath = "D:/Bootcamp/Case Study1/visit-case-s22b9/Sender/InputFootFallsData.csv";
+            String csvInputFilePath = Directory.GetCurrentDirectory();
+            String csvFileName = "InputFootFallsData.csv";
+            csvInputFilePath += @"\" + csvFileName;
+            
+            //csvInputFilePath = "D:/Bootcamp/Case Study1/visit-case-s22b9/Sender/InputFootFallsData.csv";
             Console.WriteLine("Reading CSV File.......");
             try
             {

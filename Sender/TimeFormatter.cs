@@ -7,14 +7,14 @@ namespace Sender
     {
         public List<string> HourList { get; set; }
         public List<string> MinutList { get; set; }
-        public List<string> MeridiemList { get; set; }
+        //public List<string> MeridiemList { get; set; }
         public bool IsTimeFormatted { get; set; }
 
         public TimeFormatter(List<string> timeList)
         {
             this.HourList=new List<string>();
             this.MinutList=new List<string>();
-            this.MeridiemList=new List<string>();
+            //this.MeridiemList=new List<string>();
             this.GetFormattedDate(timeList);
         }
         private void GetFormattedDate(List<string> timeList)
@@ -25,10 +25,10 @@ namespace Sender
                 for (int index = 1; index < sizeOfTimeList; index++)
                 {
                     string time = timeList[index];
-                    string[] splitIntoTimeAndMeridiem = time.Split(' ');
-                    this.MeridiemList.Add(splitIntoTimeAndMeridiem[1]);
-                    string onlyTime = splitIntoTimeAndMeridiem[0];
-                    string[] hourNMinStr = onlyTime.Split(':');
+                    //string[] splitIntoTimeAndMeridiem = time.Split(' ');
+                    //this.MeridiemList.Add(splitIntoTimeAndMeridiem[1]);
+                    //string onlyTime = splitIntoTimeAndMeridiem[0];
+                    string[] hourNMinStr = time.Split(':');
                     this.HourList.Add(hourNMinStr[0]);
                     this.MinutList.Add(hourNMinStr[1]);
                 }

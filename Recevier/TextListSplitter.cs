@@ -13,14 +13,18 @@ namespace Recevier
         public List<int> YearList { get; set; }
         public List<int> HourList { get; set; }
         public List<int> MinuteList { get; set; }
+        public bool IsListSpliited { get; set; }
+
         public TextListSplitter(List<string> textList)
         {
+            IsListSpliited = false;
             this.DayList=new List<int>();
             this.MonthList=new List<int>();
             this.YearList=new List<int>();
             this.HourList=new List<int>();
             this.MinuteList=new List<int>();
             this.SplitTextList(textList);
+            IsListSpliited = true;
         }
         private List<string> SplitStringIntoValues(string values)
         {

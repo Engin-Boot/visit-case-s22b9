@@ -27,15 +27,15 @@ namespace Sender
                 TimeFormatter formattedTime = new TimeFormatter(timeList);
                 List<string> minutList = formattedTime.MinutList;
                 List<string> houList = formattedTime.HourList;
-                List<string> meridiemList = formattedTime.MeridiemList;
+                //List<string> meridiemList = formattedTime.MeridiemList;
 
                 NumberOfRows = dayList.Count;
                 Console.WriteLine("--------Table---------");
-                Console.WriteLine("Day      Month       Year     Hour      Minut    Meridiem");
+                Console.WriteLine("Day      Month       Year     Hour      Minut   ");
                 for (int i = 0; i < dayList.Count; i++)
                 {
-                    Console.WriteLine("{0}        {1}        {2}       {3}        {4}        {5}",
-                        dayList[i], monthList[i], yearList[i], houList[i], minutList[i], meridiemList[i]);
+                    Console.WriteLine("{0}        {1}        {2}       {3}        {4}        ",
+                        dayList[i], monthList[i], yearList[i], houList[i], minutList[i]);
                 }
 
             }

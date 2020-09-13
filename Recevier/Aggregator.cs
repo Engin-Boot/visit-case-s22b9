@@ -9,16 +9,28 @@ namespace Recevier
         public List<int> IndexList { get; set; }
         public float Average { get; set; }
         public float PeakFootFallInAMonth { get; set; }
+
+        public bool IsAggregatorCalled { get; set; }
+        public bool CheckAverageFootfallsPerHourShownOverADay { get; set; }
+        public bool CheckAverageDailyFootfallsInAWeek { get; set; }
+        public bool CheckPeakDailyFootfallInTheLastMonth { get; set; }
+
         public Aggregator(TextListSplitter textListSplitter)
         {
+            IsAggregatorCalled = true;
             NoOfRows = textListSplitter.YearList.Count;
             IndexList = new List<int>();
             Average = 0F;
+            IsAggregatorCalled = true;
+            CheckAverageDailyFootfallsInAWeek = false;
+            CheckAverageFootfallsPerHourShownOverADay = false;
+            CheckPeakDailyFootfallInTheLastMonth = false;
         }
         
         //Average footfalls per hour, shown over a day
         public void AverageFootfallsPerHourShownOverADay(TextListSplitter textListSplitter)
         {
+                CheckAverageFootfallsPerHourShownOverADay= true;
                 Console.Write("Enter Day(dd/mm/yyyy) : ");
                 string enteredDate = Console.ReadLine();
                 Console.Write("You Entered : {0}", enteredDate);
@@ -55,6 +67,7 @@ namespace Recevier
         //Average daily footfalls in a week
         public void AverageDailyFootfallsInAWeek(TextListSplitter textListSplitter)
         {
+                CheckAverageDailyFootfallsInAWeek = true; 
                 Console.Write("Enter First Day of Week(dd/mm/yyyy) : ");
                 string enteredDate = Console.ReadLine();
                 Console.Write("You Entered : {0}", enteredDate);
@@ -101,6 +114,7 @@ namespace Recevier
         //Peak daily footfall in the last month
         public void PeakDailyFootfallInTheLastMonth(TextListSplitter textListSplitter)
         {
+                CheckPeakDailyFootfallInTheLastMonth = true;
                 Console.Write("Enter Month : ");
                 int enteredMonth = Int16.Parse(Console.ReadLine());
                 Console.Write("Enter Year : ");
