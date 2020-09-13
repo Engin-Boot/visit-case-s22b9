@@ -88,12 +88,7 @@
       "restore": {
         "projectUniqueName": "D:\\Bootcamp\\Case Study1\\visit-case-s22b9\\Sender\\Sender.csproj",
         "projectName": "Sender",
-        "projectPath": "D:\\Bootcamp\\Case Study1\\visit-case-s22b9\\Sender\\Sender.csproj",
-        "frameworks": {
-          "net472": {
-            "projectReferences": {}
-          }
-        }
+        "projectPath": "D:\\Bootcamp\\Case Study1\\visit-case-s22b9\\Sender\\Sender.csproj"
       },
       "frameworks": {
         "net472": {}

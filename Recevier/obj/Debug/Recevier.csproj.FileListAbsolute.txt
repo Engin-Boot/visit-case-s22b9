@@ -1,0 +1,14 @@
+C:\Users\320104254\source\repos\Bootcamp\Final Sender Recevier\Recevier\obj\Debug\Recevier.csprojAssemblyReference.cache
+C:\Users\320104254\source\repos\Bootcamp\Final Sender Recevier\Recevier\obj\Debug\Recevier.csproj.CoreCompileInputs.cache
+C:\Users\320104254\source\repos\Bootcamp\Final Sender Recevier\Recevier\bin\Debug\Recevier.exe.config
+C:\Users\320104254\source\repos\Bootcamp\Final Sender Recevier\Recevier\bin\Debug\Recevier.exe
+C:\Users\320104254\source\repos\Bootcamp\Final Sender Recevier\Recevier\bin\Debug\Recevier.pdb
+C:\Users\320104254\source\repos\Bootcamp\Final Sender Recevier\Recevier\obj\Debug\Recevier.exe
+C:\Users\320104254\source\repos\Bootcamp\Final Sender Recevier\Recevier\obj\Debug\Recevier.pdb
+D:\Bootcamp\Recevier\bin\Debug\Recevier.exe.config
+D:\Bootcamp\Recevier\bin\Debug\Recevier.exe
+D:\Bootcamp\Recevier\bin\Debug\Recevier.pdb
+D:\Bootcamp\Recevier\obj\Debug\Recevier.csprojAssemblyReference.cache
+D:\Bootcamp\Recevier\obj\Debug\Recevier.csproj.CoreCompileInputs.cache
+D:\Bootcamp\Recevier\obj\Debug\Recevier.exe
+D:\Bootcamp\Recevier\obj\Debug\Recevier.pdb
