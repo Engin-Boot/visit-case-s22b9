@@ -8,6 +8,7 @@ namespace Recevier
 {
     class Recevier
     {
+<<<<<<< HEAD
         static void Main(string[] args)
         {
             TextFileReader reader = new TextFileReader();
@@ -31,6 +32,28 @@ namespace Recevier
                 Console.ReadKey();
             
          
+=======
+        public static List<int> yearList;
+        public static List<int> monthList;
+        public static List<int> dayList;
+        public static List<int> hourList;
+        public static List<int> minuteList;
+        
+        static void Main(string[] args)
+        {
+            TextFileReader reader = new TextFileReader();
+            List<string> textList = reader.ReadTextFile();
+            ListSplitter splittedList = new ListSplitter();
+            splittedList.SplitIntoLists(textList);
+            yearList = splittedList.GetYearList();
+            monthList = splittedList.GetMonthList();
+            dayList = splittedList.GetDayList();
+            hourList = splittedList.GetHourList();
+            minuteList = splittedList.GetMinuteList();
+            Aggregate aggregate = new Aggregate();
+            aggregate.HourlyFootfallsPerDay(2);
+            Console.ReadKey();
+>>>>>>> f89b81de26de99f8c7b14cb8c514d00297d0f938
         }
     }
 }
