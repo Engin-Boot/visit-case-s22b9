@@ -21,4 +21,4 @@ jobs:
 
     - name: Check size
       run: |
-        $HOME/.local/bin/lizard | bash .github/workflows/lpar.sh 100
+        $HOME/.local/bin/lizard | bash .github/workflows/lpar.sh 200
