@@ -12,7 +12,6 @@ namespace Recevier
         public bool IsGetCountPerDayWorks { get; set; }
         public bool IsGetIndexWorks { get; set; }
         public bool IsGetListOfGivenMonthAndYear { get; set; }
-
         public AggregatorSupporter()
         {
             IsGetIndexWorks = true;
@@ -46,7 +45,6 @@ namespace Recevier
                 throw;
             }
         }
-
         public List<int> GetIndex(int day, int month, int year, TextListSplitter textListSplitter,int noOfRows)
         {
             try

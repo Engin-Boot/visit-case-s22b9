@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Recevier
 {
@@ -14,7 +12,6 @@ namespace Recevier
         public List<int> HourList { get; set; }
         public List<int> MinuteList { get; set; }
         public bool IsListSpliited { get; set; }
-
         public TextListSplitter(List<string> textList)
         {
             IsListSpliited = false;

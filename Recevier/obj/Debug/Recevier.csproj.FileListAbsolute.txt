@@ -19,3 +19,10 @@ D:\Bootcamp\Final Sender Recevier\VisitCount\Recevier\obj\Debug\Recevier.csprojA
 D:\Bootcamp\Final Sender Recevier\VisitCount\Recevier\obj\Debug\Recevier.csproj.CoreCompileInputs.cache
 D:\Bootcamp\Final Sender Recevier\VisitCount\Recevier\obj\Debug\Recevier.exe
 D:\Bootcamp\Final Sender Recevier\VisitCount\Recevier\obj\Debug\Recevier.pdb
+D:\Bootcamp\FinalSenderRecevier\VisitCount\Recevier\bin\Debug\Recevier.exe.config
+D:\Bootcamp\FinalSenderRecevier\VisitCount\Recevier\bin\Debug\Recevier.exe
+D:\Bootcamp\FinalSenderRecevier\VisitCount\Recevier\bin\Debug\Recevier.pdb
+D:\Bootcamp\FinalSenderRecevier\VisitCount\Recevier\obj\Debug\Recevier.csproj.CoreCompileInputs.cache
+D:\Bootcamp\FinalSenderRecevier\VisitCount\Recevier\obj\Debug\Recevier.exe
+D:\Bootcamp\FinalSenderRecevier\VisitCount\Recevier\obj\Debug\Recevier.pdb
+D:\Bootcamp\FinalSenderRecevier\VisitCount\Recevier\obj\Debug\Recevier.csprojAssemblyReference.cache

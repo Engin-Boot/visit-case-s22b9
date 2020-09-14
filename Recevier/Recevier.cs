@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Recevier
 {
@@ -10,27 +6,18 @@ namespace Recevier
     {
         static void Main(string[] args)
         {
-            TextFileReader reader = new TextFileReader();
-            TextListSplitter textListSplitter = new TextListSplitter(reader.TextList);
-            Aggregator aggregator = new Aggregator(textListSplitter);
-            while (true)
-                {
-                    Console.WriteLine("Enter 1: For Average footfalls per hour, shown over a day");
-                    Console.WriteLine("Enter 2: For /Average daily footfalls in a week");
-                    Console.WriteLine("Enter 3: For Peak daily footfall in the last month");
-                    Console.WriteLine("Enter 0: For Exit");
-                    int choice = Int32.Parse(Console.ReadLine());
-                    if (choice == 1) aggregator.AverageFootfallsPerHourShownOverADay(textListSplitter);
-                    else if (choice == 2) aggregator.AverageDailyFootfallsInAWeek(textListSplitter);
-                    else if (choice == 3) aggregator.PeakDailyFootfallInTheLastMonth(textListSplitter);
-                    else if (choice==0) break;
-                    else Console.WriteLine("Please Enter a valid Choice!!");
-                }
-                
-            Console.WriteLine("Exit Successfull!!");
-            Console.ReadKey();
+            Console.WriteLine("For Average footfalls per hour, shown over a day-Enter Day(dd/mm/yyyy)");
+            Console.WriteLine("For Average daily footfalls in a week-Enter First Day of Week(dd/mm/yyyy)");
+            Console.WriteLine("For Peak Daily Foot fall In a Given Month Enter Month Year");
             
-         
+            ConsoleReader consoleReader= new ConsoleReader();
+            consoleReader.readDataFromConsole();
+           
+            TextListSplitter textListSplitter = new TextListSplitter(consoleReader.DataList);
+            Aggregator aggregator = new Aggregator(textListSplitter);
+            aggregator.AverageFootfallsPerHourShownOverADay(textListSplitter,consoleReader.EnteredDateForAverageFootfallsPerHour);
+            aggregator.AverageDailyFootfallsInAWeek(textListSplitter,consoleReader.EnteredDateForAverageDailyFootfallsInAWeek);
+            aggregator.PeakDailyFootfallInTheLastMonth(textListSplitter,consoleReader.MonthAndYear);
         }
     }
 }

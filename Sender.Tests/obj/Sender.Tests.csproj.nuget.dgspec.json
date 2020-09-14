@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Bootcamp\\Final Sender Recevier\\VisitCount\\Sender.Tests\\Sender.Tests.csproj": {}
+    "D:\\Bootcamp\\FinalSenderRecevier\\VisitCount\\Sender.Tests\\Sender.Tests.csproj": {}
   },
   "projects": {
-    "D:\\Bootcamp\\Final Sender Recevier\\VisitCount\\Sender.Tests\\Sender.Tests.csproj": {
+    "D:\\Bootcamp\\FinalSenderRecevier\\VisitCount\\Sender.Tests\\Sender.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Bootcamp\\Final Sender Recevier\\VisitCount\\Sender.Tests\\Sender.Tests.csproj",
+        "projectUniqueName": "D:\\Bootcamp\\FinalSenderRecevier\\VisitCount\\Sender.Tests\\Sender.Tests.csproj",
         "projectName": "Sender.Tests",
-        "projectPath": "D:\\Bootcamp\\Final Sender Recevier\\VisitCount\\Sender.Tests\\Sender.Tests.csproj",
+        "projectPath": "D:\\Bootcamp\\FinalSenderRecevier\\VisitCount\\Sender.Tests\\Sender.Tests.csproj",
         "packagesPath": "C:\\Users\\Twinkal\\.nuget\\packages\\",
-        "outputPath": "D:\\Bootcamp\\Final Sender Recevier\\VisitCount\\Sender.Tests\\obj\\",
+        "outputPath": "D:\\Bootcamp\\FinalSenderRecevier\\VisitCount\\Sender.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Twinkal\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -27,8 +27,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\Bootcamp\\Final Sender Recevier\\VisitCount\\Sender\\Sender.csproj": {
-                "projectPath": "D:\\Bootcamp\\Final Sender Recevier\\VisitCount\\Sender\\Sender.csproj"
+              "D:\\Bootcamp\\FinalSenderRecevier\\VisitCount\\Sender\\Sender.csproj": {
+                "projectPath": "D:\\Bootcamp\\FinalSenderRecevier\\VisitCount\\Sender\\Sender.csproj"
               }
             }
           }
@@ -84,11 +84,11 @@
         }
       }
     },
-    "D:\\Bootcamp\\Final Sender Recevier\\VisitCount\\Sender\\Sender.csproj": {
+    "D:\\Bootcamp\\FinalSenderRecevier\\VisitCount\\Sender\\Sender.csproj": {
       "restore": {
-        "projectUniqueName": "D:\\Bootcamp\\Final Sender Recevier\\VisitCount\\Sender\\Sender.csproj",
+        "projectUniqueName": "D:\\Bootcamp\\FinalSenderRecevier\\VisitCount\\Sender\\Sender.csproj",
         "projectName": "Sender",
-        "projectPath": "D:\\Bootcamp\\Final Sender Recevier\\VisitCount\\Sender\\Sender.csproj",
+        "projectPath": "D:\\Bootcamp\\FinalSenderRecevier\\VisitCount\\Sender\\Sender.csproj",
         "frameworks": {
           "net472": {
             "projectReferences": {}

@@ -9,7 +9,6 @@ namespace Recevier
         public List<int> IndexList { get; set; }
         public float Average { get; set; }
         public float PeakFootFallInAMonth { get; set; }
-
         public bool IsAggregatorCalled { get; set; }
         public bool CheckAverageFootfallsPerHourShownOverADay { get; set; }
         public bool CheckAverageDailyFootfallsInAWeek { get; set; }
@@ -28,12 +27,10 @@ namespace Recevier
         }
         
         //Average footfalls per hour, shown over a day
-        public void AverageFootfallsPerHourShownOverADay(TextListSplitter textListSplitter)
+        public void AverageFootfallsPerHourShownOverADay(TextListSplitter textListSplitter,string enteredDate)
         {
                 CheckAverageFootfallsPerHourShownOverADay= true;
-                Console.Write("Enter Day(dd/mm/yyyy) : ");
-                string enteredDate = Console.ReadLine();
-                Console.Write("You Entered : {0}", enteredDate);
+                enteredDate = enteredDate.Trim();
                 string[] ddMmYyDate = enteredDate.Split('/');
                 int day = Int16.Parse(ddMmYyDate[0]);
                 int month = Int16.Parse(ddMmYyDate[1]);
@@ -44,9 +41,8 @@ namespace Recevier
                 for (int index = 0; index < IndexList.Count; index++)
                 {
                     finalHourList.Add(textListSplitter.HourList[IndexList[index]]);
-                }
-
-            //printing to console
+                } 
+                //printing to console
                 Console.WriteLine("------------Average FootFall Per Hour-----------------");
                 Console.WriteLine("Given Date : {0}", enteredDate);
                 Console.WriteLine("_____________________________");
@@ -54,23 +50,21 @@ namespace Recevier
                 var valueVsFreq = ShowFreq(finalHourList);
                 Console.WriteLine("Average FootFall Count : {0}", Average);
                 Console.WriteLine("_____________________________");
-            //Prinitng to file
-            string contentToBePrinted = "";
-            contentToBePrinted += "Given Date,"+ enteredDate+"\n";
-            contentToBePrinted += "Hour,Count\n";
-            contentToBePrinted += valueVsFreq;
-            contentToBePrinted += "Average FootFall Count,"+Average+"\n"; 
-            CsvFileWriter csvFileWriter= new CsvFileWriter();
-            csvFileWriter.writeToCsvFile(contentToBePrinted, "AverageFootfallsPerHourShownOverADay");
+                //Prinitng to file
+                string contentToBePrinted = "";
+                contentToBePrinted += "Given Date,"+ enteredDate+"\n";
+                contentToBePrinted += "Hour,Count\n";
+                contentToBePrinted += valueVsFreq;
+                contentToBePrinted += "Average FootFall Count,"+Average+"\n"; 
+                CsvFileWriter csvFileWriter= new CsvFileWriter();
+                csvFileWriter.writeToCsvFile(contentToBePrinted, "AverageFootfallsPerHourShownOverADay");
         }
 
         //Average daily footfalls in a week
-        public void AverageDailyFootfallsInAWeek(TextListSplitter textListSplitter)
+        public void AverageDailyFootfallsInAWeek(TextListSplitter textListSplitter,string enteredDate)
         {
-                CheckAverageDailyFootfallsInAWeek = true; 
-                Console.Write("Enter First Day of Week(dd/mm/yyyy) : ");
-                string enteredDate = Console.ReadLine();
-                Console.Write("You Entered : {0}", enteredDate);
+                CheckAverageDailyFootfallsInAWeek = true;
+                enteredDate = enteredDate.Trim();
                 string[] ddMmYyDate = enteredDate.Split('/');
                 int day = Int16.Parse(ddMmYyDate[0]);
                 int month = Int16.Parse(ddMmYyDate[1]);
@@ -112,14 +106,13 @@ namespace Recevier
         }
 
         //Peak daily footfall in the last month
-        public void PeakDailyFootfallInTheLastMonth(TextListSplitter textListSplitter)
+        public void PeakDailyFootfallInTheLastMonth(TextListSplitter textListSplitter,string monthYear)
         {
                 CheckPeakDailyFootfallInTheLastMonth = true;
-                Console.Write("Enter Month : ");
-                int enteredMonth = Int16.Parse(Console.ReadLine());
-                Console.Write("Enter Year : ");
-                int enteredYear = Int16.Parse(Console.ReadLine());
-                Console.Write("You Entered : {0}/{1}", enteredMonth, enteredYear);
+                monthYear = monthYear.Trim();
+                string[] monthNYear = monthYear.Split(' ');
+                int enteredMonth=Int32.Parse(monthNYear[0]);
+                int enteredYear = Int32.Parse(monthNYear[1]);
                 AggregatorSupporter aggregatorSupporter = new AggregatorSupporter();
                 IndexList=aggregatorSupporter.GetListOfGivenMonthAndYear(enteredMonth, enteredYear, textListSplitter,NoOfRows);
                 //IndexList:which matches with given month and year

@@ -9,12 +9,19 @@ namespace Sender
     public class ConsoleDisplayer
     {
         public int NumberOfRows { get; set; }
-
         public ConsoleDisplayer()
         {
             NumberOfRows = 0;
         }
-
+        private void displayOnConsole(string dataType, List<string> values)
+        {
+            Console.Write(dataType+" : ");
+            for (int index = 0; index < values.Count; index++)
+            {
+                Console.Write(values[index] +" ");
+            }
+            Console.WriteLine();
+        }
         public void DisplayOnConsole(List<string> dateList ,List<string> timeList)
         {
             try
@@ -26,17 +33,16 @@ namespace Sender
 
                 TimeFormatter formattedTime = new TimeFormatter(timeList);
                 List<string> minutList = formattedTime.MinutList;
-                List<string> houList = formattedTime.HourList;
-                //List<string> meridiemList = formattedTime.MeridiemList;
+                List<string> hourList = formattedTime.HourList;
 
+                Console.WriteLine("Data Type   Values");
+                displayOnConsole("Day",dayList);
+                displayOnConsole("Month", monthList);
+                displayOnConsole("Year", yearList);
+                displayOnConsole("Hour", minutList);
+                displayOnConsole("Minute", hourList);
                 NumberOfRows = dayList.Count;
-                Console.WriteLine("--------Table---------");
-                Console.WriteLine("Day      Month       Year     Hour      Minut   ");
-                for (int i = 0; i < dayList.Count; i++)
-                {
-                    Console.WriteLine("{0}        {1}        {2}       {3}        {4}        ",
-                        dayList[i], monthList[i], yearList[i], houList[i], minutList[i]);
-                }
+                
 
             }
             catch (Exception e)
@@ -45,8 +51,6 @@ namespace Sender
                 NumberOfRows = 0;
                 throw;
             }
-           
-
         }
     }
 }

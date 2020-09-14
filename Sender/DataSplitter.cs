@@ -13,7 +13,6 @@ namespace Sender
             this.TimeList=new List<string>();
             this.SplitIntoDateTimeList(dataList);
         }
-        
         private void SplitIntoDateTimeList(List<string> dataList)
         {
             try

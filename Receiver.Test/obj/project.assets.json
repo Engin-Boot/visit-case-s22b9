@@ -3525,11 +3525,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Bootcamp\\Final Sender Recevier\\VisitCount\\Receiver.Test\\Receiver.Test.csproj",
+      "projectUniqueName": "D:\\Bootcamp\\FinalSenderRecevier\\VisitCount\\Receiver.Test\\Receiver.Test.csproj",
       "projectName": "Receiver.Test",
-      "projectPath": "D:\\Bootcamp\\Final Sender Recevier\\VisitCount\\Receiver.Test\\Receiver.Test.csproj",
+      "projectPath": "D:\\Bootcamp\\FinalSenderRecevier\\VisitCount\\Receiver.Test\\Receiver.Test.csproj",
       "packagesPath": "C:\\Users\\Twinkal\\.nuget\\packages\\",
-      "outputPath": "D:\\Bootcamp\\Final Sender Recevier\\VisitCount\\Receiver.Test\\obj\\",
+      "outputPath": "D:\\Bootcamp\\FinalSenderRecevier\\VisitCount\\Receiver.Test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Twinkal\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3545,8 +3545,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\Bootcamp\\Final Sender Recevier\\VisitCount\\Recevier\\Recevier.csproj": {
-              "projectPath": "D:\\Bootcamp\\Final Sender Recevier\\VisitCount\\Recevier\\Recevier.csproj"
+            "D:\\Bootcamp\\FinalSenderRecevier\\VisitCount\\Recevier\\Recevier.csproj": {
+              "projectPath": "D:\\Bootcamp\\FinalSenderRecevier\\VisitCount\\Recevier\\Recevier.csproj"
             }
           }
         }

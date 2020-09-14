@@ -9,7 +9,7 @@ namespace Recevier
         {
             String csvOutputFilePath = Directory.GetCurrentDirectory();
             String currentTime=DateTime.Now.ToString("yyyy_MM_dd");
-            String csvFileName = currentTime+ fuctionName+"outputFootFallData.csv";
+            String csvFileName = currentTime+ fuctionName+"FootFallData.csv";
             csvOutputFilePath += @"\" + csvFileName;
             using (StreamWriter w = File.AppendText(csvOutputFilePath)) 
             {

@@ -8,7 +8,6 @@ namespace Sender
         public List<string> DayList { get; set; }
         public List<string> MonthList { get; set; }
         public List<string> YearList { get; set; }
-
         public bool IsDateFormatted { get; set; }
 
         public DateFormatter(List<string> dateList)

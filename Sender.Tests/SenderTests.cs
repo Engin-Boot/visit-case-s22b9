@@ -37,15 +37,7 @@ namespace Sender.Tests
             Console.WriteLine("WhenSplittedDataCalledThenGetDateAndTimeList Done!");
         }
 
-        [Fact]
-        public void WhenDataSenderCalledThenWriteOnRecevier()
-        {
-            DataSender dataSender = new DataSender();
-            Assert.False(dataSender.OutputFilePath != "");
-            dataSender.StoreDataInTextFile(DateList, TimeList);
-            Assert.True(dataSender.OutputFilePath != "");
-            Console.WriteLine("WhenDataSenderCalledThenWriteOnRecevier Done!");
-        }
+       
         [Fact]
         public void WhenConsoleDisplayerCalledThenWriteOnConsole()
         {

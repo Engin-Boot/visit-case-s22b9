@@ -16,19 +16,14 @@ namespace Sender
             String csvInputFilePath = Directory.GetCurrentDirectory();
             String csvFileName = "InputFootFallsData.csv";
             csvInputFilePath += @"\" + csvFileName;
-            
-            //csvInputFilePath = "D:/Bootcamp/Case Study1/visit-case-s22b9/Sender/InputFootFallsData.csv";
-            Console.WriteLine("Reading CSV File.......");
             try
             {
                     StreamReader inputDataStreamReader = new StreamReader(csvInputFilePath);
                     string line;
                     while ((line = inputDataStreamReader.ReadLine()) != null)
                     {
-                        Console.WriteLine(line);
                         DataList.Add(line);
                     }
-
                     inputDataStreamReader.Close();
             }
             catch (Exception e)
@@ -36,7 +31,6 @@ namespace Sender
                 Console.WriteLine(e+" File Not Found!!--Check CsvFileReader");
                 throw;
             }
-            Console.WriteLine();
         }
     }
     
