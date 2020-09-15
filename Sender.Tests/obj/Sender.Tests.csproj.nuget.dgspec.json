@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Bootcamp\\FinalSenderRecevier\\VisitCount\\Sender.Tests\\Sender.Tests.csproj": {}
+    "C:\\Users\\320104254\\source\\repos\\visit-case-s22b9\\Sender.Tests\\Sender.Tests.csproj": {}
   },
   "projects": {
-    "D:\\Bootcamp\\FinalSenderRecevier\\VisitCount\\Sender.Tests\\Sender.Tests.csproj": {
+    "C:\\Users\\320104254\\source\\repos\\visit-case-s22b9\\Sender.Tests\\Sender.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Bootcamp\\FinalSenderRecevier\\VisitCount\\Sender.Tests\\Sender.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\320104254\\source\\repos\\visit-case-s22b9\\Sender.Tests\\Sender.Tests.csproj",
         "projectName": "Sender.Tests",
-        "projectPath": "D:\\Bootcamp\\FinalSenderRecevier\\VisitCount\\Sender.Tests\\Sender.Tests.csproj",
-        "packagesPath": "C:\\Users\\Twinkal\\.nuget\\packages\\",
-        "outputPath": "D:\\Bootcamp\\FinalSenderRecevier\\VisitCount\\Sender.Tests\\obj\\",
+        "projectPath": "C:\\Users\\320104254\\source\\repos\\visit-case-s22b9\\Sender.Tests\\Sender.Tests.csproj",
+        "packagesPath": "C:\\Users\\320104254\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\320104254\\source\\repos\\visit-case-s22b9\\Sender.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Twinkal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\320104254\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -27,8 +27,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\Bootcamp\\FinalSenderRecevier\\VisitCount\\Sender\\Sender.csproj": {
-                "projectPath": "D:\\Bootcamp\\FinalSenderRecevier\\VisitCount\\Sender\\Sender.csproj"
+              "C:\\Users\\320104254\\source\\repos\\visit-case-s22b9\\Sender\\Sender.csproj": {
+                "projectPath": "C:\\Users\\320104254\\source\\repos\\visit-case-s22b9\\Sender\\Sender.csproj"
               }
             }
           }
@@ -84,16 +84,11 @@
         }
       }
     },
-    "D:\\Bootcamp\\FinalSenderRecevier\\VisitCount\\Sender\\Sender.csproj": {
+    "C:\\Users\\320104254\\source\\repos\\visit-case-s22b9\\Sender\\Sender.csproj": {
       "restore": {
-        "projectUniqueName": "D:\\Bootcamp\\FinalSenderRecevier\\VisitCount\\Sender\\Sender.csproj",
+        "projectUniqueName": "C:\\Users\\320104254\\source\\repos\\visit-case-s22b9\\Sender\\Sender.csproj",
         "projectName": "Sender",
-        "projectPath": "D:\\Bootcamp\\FinalSenderRecevier\\VisitCount\\Sender\\Sender.csproj",
-        "frameworks": {
-          "net472": {
-            "projectReferences": {}
-          }
-        }
+        "projectPath": "C:\\Users\\320104254\\source\\repos\\visit-case-s22b9\\Sender\\Sender.csproj"
       },
       "frameworks": {
         "net472": {}
