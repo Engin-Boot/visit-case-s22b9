@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DuplicatesReport ToolsVersion="202.0.20200820.132558">
+  <Statistics>
+    <CodebaseCost>9413</CodebaseCost>
+    <TotalDuplicatesCost>293</TotalDuplicatesCost>
+    <TotalFragmentsCost>680</TotalFragmentsCost>
+  </Statistics>
+  <Duplicates>
+    <Duplicate Cost="128">
+      <Fragment>
+        <FileName>Recevier\Aggregator.cs</FileName>
+        <OffsetRange Start="1271" End="1535"></OffsetRange>
+        <LineRange Start="33" End="37"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Recevier\Aggregator.cs</FileName>
+        <OffsetRange Start="3304" End="3568"></OffsetRange>
+        <LineRange Start="68" End="72"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="94">
+      <Fragment>
+        <FileName>Receiver.Test\ReceiverTests.cs</FileName>
+        <OffsetRange Start="1183" End="1468"></OffsetRange>
+        <LineRange Start="40" End="42"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Receiver.Test\ReceiverTests.cs</FileName>
+        <OffsetRange Start="2087" End="2374"></OffsetRange>
+        <LineRange Start="58" End="60"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Receiver.Test\ReceiverTests.cs</FileName>
+        <OffsetRange Start="3102" End="3389"></OffsetRange>
+        <LineRange Start="73" End="75"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="71">
+      <Fragment>
+        <FileName>Recevier\Aggregator.cs</FileName>
+        <OffsetRange Start="3834" End="4044"></OffsetRange>
+        <LineRange Start="76" End="78"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Recevier\Aggregator.cs</FileName>
+        <OffsetRange Start="4211" End="4429"></OffsetRange>
+        <LineRange Start="82" End="84"></LineRange>
+      </Fragment>
+    </Duplicate>
+  </Duplicates>
+</DuplicatesReport>
