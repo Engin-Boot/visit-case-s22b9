@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using  System.IO;
-using System.Reflection;
+
 namespace Sender
 {
     public class CsvFileReader
@@ -14,11 +14,11 @@ namespace Sender
         }
         private void ReadCsvFile()
         {
-            string executableLocation = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-            String csvInputFilePath = Path.Combine(executableLocation, "InputFootFallsData.csv");
-            //String csvInputFilePath = Directory.GetCurrentDirectory();
-            //String csvFileName = "InputFootFallsData.csv";
-            //csvInputFilePath += @"\" + csvFileName;
+            String binDebugNetCorePath = Directory.GetCurrentDirectory();
+            String csvInputFilePath = Path.GetFullPath(Path.Combine(binDebugNetCorePath, @"..\..\"));
+            String csvFileName = "InputFootFallsData.csv";
+            csvInputFilePath += @"\" + csvFileName;
+
             try
             {
                     StreamReader inputDataStreamReader = new StreamReader(csvInputFilePath);
