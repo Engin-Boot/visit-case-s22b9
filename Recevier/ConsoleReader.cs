@@ -10,10 +10,17 @@ namespace Recevier
         public string EnteredDateForAverageFootfallsPerHour { get; set; }
         public string EnteredDateForAverageDailyFootfallsInAWeek { get; set; }
         public string MonthAndYear { get; set; }
+        public bool IsDataRead { get; set; }
+
         public ConsoleReader()
         {
             TextList =new List<string>();
             DataList=new List<string>();
+            EnteredDateForAverageDailyFootfallsInAWeek = "";
+            EnteredDateForAverageFootfallsPerHour = "";
+            MonthAndYear = "";
+            IsDataRead = true;
+
         }
 
         public void readDataFromConsole()
@@ -40,6 +47,7 @@ namespace Recevier
                 EnteredDateForAverageFootfallsPerHour = TextList[6];
                 EnteredDateForAverageDailyFootfallsInAWeek = TextList[7];
                 MonthAndYear = TextList[8];
+                IsDataRead = true;
             }
         }
     }

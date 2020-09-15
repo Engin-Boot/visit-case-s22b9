@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "d/9ZL/CaKTeMveK/51Anj14Eoqs6tX0pzbO8R9T7btHysdgdeTsjyJcEDr9eey/MFAfZ4JHWSj6MykCIAt+UjQ==",
+  "dgSpecHash": "oIIQkHvo21dI82VUrvLn9J7AQn4uISyaxAZigQLUqdk7CRA+cb5xEvbbZTQ6aIA8/5ahNagxd4KS4UV5uHz7cA==",
   "success": true,
   "projectFilePath": "D:\\Bootcamp\\FinalSenderRecevier\\VisitCount\\Receiver.Test\\Receiver.Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Twinkal\\.nuget\\packages\\coverlet.collector\\1.2.0\\coverlet.collector.1.2.0.nupkg.sha512",
+    "C:\\Users\\Twinkal\\.nuget\\packages\\coverlet.msbuild\\2.9.0\\coverlet.msbuild.2.9.0.nupkg.sha512",
     "C:\\Users\\Twinkal\\.nuget\\packages\\microsoft.codecoverage\\16.5.0\\microsoft.codecoverage.16.5.0.nupkg.sha512",
     "C:\\Users\\Twinkal\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",
     "C:\\Users\\Twinkal\\.nuget\\packages\\microsoft.net.test.sdk\\16.5.0\\microsoft.net.test.sdk.16.5.0.nupkg.sha512",

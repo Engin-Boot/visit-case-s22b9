@@ -5,6 +5,13 @@ namespace Recevier
 {
     public class CsvFileWriter
     {
+        public bool IsDataWritten { get; set; }
+
+        public CsvFileWriter()
+        {
+            IsDataWritten = false;
+        }
+
         public void writeToCsvFile(string content,string fuctionName)
         {
             String csvOutputFilePath = Directory.GetCurrentDirectory();
@@ -16,6 +23,7 @@ namespace Recevier
                 w.WriteLine("\n\n");
                 w.WriteLine(DateTime.Now.ToString("HH-mm-ss"));
                 w.WriteLine(content);
+                IsDataWritten = true;
             }
         }
     }

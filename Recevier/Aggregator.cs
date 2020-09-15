@@ -29,7 +29,7 @@ namespace Recevier
         //Average footfalls per hour, shown over a day
         public void AverageFootfallsPerHourShownOverADay(TextListSplitter textListSplitter,string enteredDate)
         {
-                CheckAverageFootfallsPerHourShownOverADay= true;
+                
                 enteredDate = enteredDate.Trim();
                 string[] ddMmYyDate = enteredDate.Split('/');
                 int day = Int16.Parse(ddMmYyDate[0]);
@@ -58,12 +58,13 @@ namespace Recevier
                 contentToBePrinted += "Average FootFall Count,"+Average+"\n"; 
                 CsvFileWriter csvFileWriter= new CsvFileWriter();
                 csvFileWriter.writeToCsvFile(contentToBePrinted, "AverageFootfallsPerHourShownOverADay");
+                CheckAverageFootfallsPerHourShownOverADay = true;
         }
 
         //Average daily footfalls in a week
         public void AverageDailyFootfallsInAWeek(TextListSplitter textListSplitter,string enteredDate)
         {
-                CheckAverageDailyFootfallsInAWeek = true;
+                
                 enteredDate = enteredDate.Trim();
                 string[] ddMmYyDate = enteredDate.Split('/');
                 int day = Int16.Parse(ddMmYyDate[0]);
@@ -103,12 +104,13 @@ namespace Recevier
                
                 CsvFileWriter csvFileWriter = new CsvFileWriter();
                 csvFileWriter.writeToCsvFile(contentToBePrinted, "AverageDailyFootfallsInAWeek");
+                CheckAverageDailyFootfallsInAWeek = true;
         }
 
         //Peak daily footfall in the last month
         public void PeakDailyFootfallInTheLastMonth(TextListSplitter textListSplitter,string monthYear)
         {
-                CheckPeakDailyFootfallInTheLastMonth = true;
+                
                 monthYear = monthYear.Trim();
                 string[] monthNYear = monthYear.Split(' ');
                 int enteredMonth=Int32.Parse(monthNYear[0]);
@@ -142,6 +144,7 @@ namespace Recevier
                 contentToBePrinted += "Peak FootFall Count," + PeakFootFallInAMonth + "\n";
                 CsvFileWriter csvFileWriter = new CsvFileWriter();
                 csvFileWriter.writeToCsvFile(contentToBePrinted, "PeakDailyFootfallInTheLastMonth");
+                CheckPeakDailyFootfallInTheLastMonth = true;
         }
 
         public string ShowFreq(List<int> inputList)

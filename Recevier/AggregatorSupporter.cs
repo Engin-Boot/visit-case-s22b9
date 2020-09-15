@@ -14,9 +14,9 @@ namespace Recevier
         public bool IsGetListOfGivenMonthAndYear { get; set; }
         public AggregatorSupporter()
         {
-            IsGetIndexWorks = true;
-            IsGetCountPerDayWorks = true;
-            IsGetListOfGivenMonthAndYear = true;
+            IsGetIndexWorks = false;
+            IsGetCountPerDayWorks = false;
+            IsGetListOfGivenMonthAndYear = false;
             IsSupporterWork = true;
         }
 
