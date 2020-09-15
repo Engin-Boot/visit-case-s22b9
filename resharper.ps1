@@ -43,7 +43,7 @@ else{
 
 $duplicateCost = $dupdoc.DuplicatesReport.Statistics.TotalDuplicatesCost
 
-if($duplicateCost -eq 0){
+if($duplicateCost -eq 293){
     Write-Host "Cost of Duplicate Code:" $duplicateCost -ForegroundColor green 
 }
 else{
